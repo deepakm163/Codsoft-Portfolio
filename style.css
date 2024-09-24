@@ -1,0 +1,511 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.selectin-m1{
+    margin: 15px 10px;
+}
+body{
+    background-color:white;
+    width: 100%;
+    height: auto;
+    position: relative;
+   
+}
+
+nav{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+    background: linear-gradient(45deg, #08157a, #2eaf48);
+}
+
+.nav-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-container .logo img{
+    width: 140px;
+    height: 50px;
+    
+}
+
+.nav-container .links a{
+    font-size: 1.3rem;
+    color: rgb(173, 154, 154);
+    text-decoration: none;
+    margin: 0 20px;
+    transition: 0.3s linear;
+}
+
+.nav-container .links a:hover{
+    color: #e8ebf2;
+    box-shadow: 1px 1px 20px #fffcfc;
+    font-size: 1.6rem;
+}
+
+nav button{
+    width: 150px;
+    height: 40px;
+    border-radius:20px;
+    background-color: #6163d0;
+    color: white;
+    font-size: 1.2rem;
+    transition: 0.3s linear;
+    font-weight: 700;
+    box-shadow: 1px 1px 10px #441ffc;
+    border: none;
+    outline: none;
+    transition: transform 0.2s;
+}
+
+nav button:hover{
+    background-color:white;
+    color: #1f5afc;
+    border:2px solid #5fe26e;
+    font-size: 1.3rem;
+    transform: scale(1.07);
+}
+section{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    background: linear-gradient(to right, #0d1448, #54aa65);
+}
+
+section .content{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.content .main-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 10%;
+}
+.main-content h1{
+    font-size: 60px
+}
+
+.main-content span{
+    font-size: 60px;
+    font-weight: 700;
+    color: #5dda51;
+}
+.main-content span:hover{
+    transform: scale(1.08);
+   
+}
+
+.main-content p{
+    font-size: 20px;
+    color: rgb(173, 154, 154);
+}
+
+.main-content .buttons{
+    width: 70%;
+    margin: 5%;
+    min-height: 5.5vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-content .buttons button{
+    width: 200px;
+    margin: 0 10px;
+    border-radius: 10px;
+    background: #484092;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 700;
+    transition: transform 0.2s;
+}
+.buttons button:hover{
+    box-shadow: 1px 1px 20px #fffcfc;
+    transform: scale(1.05);
+}
+
+.content .image{
+    width: 50%;
+    display: flex;
+    margin-top: 5px;
+    justify-content: center;
+}
+
+.image img{
+    margin-top: 40px;
+    width: 500px;
+    
+}
+
+.content1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+}
+
+.content1 .main-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 10%;
+}
+.content1 .main-content .buttons{
+    width: 70%;
+    margin: 5%;
+    min-height: 5.5vh;
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+.content1 .main-content .buttons button{
+    width: 200px;
+    margin: 0 10px;
+    border-radius: 20px;
+    background: #734ea1;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    font-weight: 700;
+    transition: transform 0.2s;
+ 
+}
+.content1 .main-content .buttons button:hover{
+    transform: scale(1.05);
+    box-shadow: 2px 2px 15px #cda15b;
+}
+
+.media{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+.media i{
+    font-size: 30px;
+    color: #0e0c10;
+    border-radius: 50%;
+    border-radius: 1px solid rgb(196, 158, 176);
+    transition: 0.2s linear;
+}
+.media i:hover{
+    box-shadow: 4px 4px 30px #ddd855;
+    transform: scale(1.5);
+}
+.experience{
+     width: 100%;
+    
+}
+.experience h1{
+    font-size: 38px;
+    margin-left: 15px;
+    padding: 20px;
+    text-decoration: underline;
+}
+.experience p{
+    margin: 10px 0px;
+}
+.experience .experience-container p:nth-child(1){
+        color: white;
+}
+.experience .experience-container p:nth-child(3){
+    color: white;
+    text-decoration: underline;
+}
+.experience .experience-container p:nth-child(4){
+    color: rgb(169, 153, 153);
+}
+.experience .experience-container h4{
+    font-size: 25px;
+}
+.experience .experience-container{
+  
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+.experience .experience-container div{
+    border: 1px solid transparent;
+    width: 30%;
+    height: 250px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(45deg, #161e56, #55c26b);
+    border-radius: 10px;
+    box-shadow: 4px 4px 40px #f9f9f31e;
+    transition: 0.2s linear;
+}
+.experience .experience-container div:hover{
+    
+    transform: scale(1.05);
+   box-shadow: 1px 1px 20px #fffcfc;
+}
+
+.Skills{
+    width: 100%;
+}
+.Skills h2{
+    font-size: 38px;
+    margin-left: 15px;
+    padding: 20px;
+    text-decoration: underline;
+}
+.Skills .Skills-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+.Skills .Skills-container div{
+    margin: 10px;
+    width: 30%;
+    border: 2px solid transparent;
+    text-align: center;
+    border-radius: 10px;
+     background: linear-gradient(45deg, #161e56, #55c26b);
+    transition: transform 0.3s;
+}
+.Skills .Skills-container div:hover{
+    transform: scale(1.05);
+    box-shadow: 1px 1px 20px #fffcfc;
+}
+.Skills .Skills-container div i{
+    margin: 10px;
+   color: rgb(255, 255, 255);
+    font-size: 200px;
+}
+.Skills .Skills-container div p{
+    font-size: 20px;
+    color: rgb(173, 154, 154);
+    margin-bottom: 10px;
+    transition: 0.2s linear;
+}
+.Skills .Skills-container div p:hover{
+     transform: scale(1.9);
+     
+}
+
+.Education{
+    width: 100%;
+}
+.Education h2{
+    font-size: 38px;
+    margin-left: 15px;
+    padding: 20px;
+    text-decoration: underline;
+}
+.Education h4{
+    font-size: 30px;
+    margin-left: 15px;
+    padding: 20px;
+}
+.Education .Education-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 15px;
+  }
+.Education .Education-container div{
+    margin: 10px;
+    width: 30%;
+    text-align: center;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #161e56, #55c26b);
+    transition: 0.2s linear;
+    padding: 15px;
+}
+.Education .Education-container div:hover{
+    box-shadow: 1px 1px 20px #fffcfc;
+    transform: scale(1.05);
+}
+.Education .Education-container div i{
+    margin: 10px;
+    border: 2px solid black;
+    color: rgb(255, 255, 255);
+    font-size: 200px;
+    background-color: #46439d;
+}
+.Education .Education-container div p{
+    font-size: 13px;
+    color: rgb(220, 197, 197);
+    margin-bottom: 10px;
+   
+}
+
+.Portfolio{
+    width: 100%;
+}
+.Portfolio h2{
+    font-size: 38px;
+    margin-left: 15px;
+    padding: 20px;
+    text-decoration: underline;
+}
+.Portfolio h4{
+    font-size: 30px;
+    margin-left: 15px;
+    padding: 20px;
+    
+}
+.Portfolio .Portfolio-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+.Portfolio .Portfolio-container div{
+    margin: 10px;
+    width: 30%;
+    border: 2px solid transparent;
+    text-align: center;
+     background: linear-gradient(45deg, #161e56, #55c26b);
+    border-radius: 10px;
+    position: relative;
+    transition: 0.2s linear;
+    padding: 15px;
+}
+.Portfolio .Portfolio-container div:hover{
+    transform: scale(1.05);
+    box-shadow: 1px 1px 20px #fffcfc;
+}
+.Portfolio .Portfolio-container div i{
+   color: white;
+   position: absolute;
+   left: 5px;
+   top: 10px;
+   border-radius: 70%;
+   font-size: 35px;
+}
+.Portfolio .Portfolio-container div p{
+    font-size: 15px;
+    color: rgb(218, 208, 208);
+    margin-bottom: 10px;
+    line-height: 23px;
+}
+
+.Contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    width: 100%;
+    background: linear-gradient(45deg, #17205f, #4fa460);
+    
+    
+}
+.Contact h1{
+    font-size: 40px;
+    color: #65e87f;
+    text-decoration: underline;
+}
+.Contact h2{
+    font-size: 30px;
+    color: #c1da51;
+    margin: 10px 0px;
+}
+.Contact .form-container{
+    border: 2px solid transparent;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    border: 2px solid transparent;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: column;
+    background: linear-gradient(to right, #0d1448, #54aa65);
+}
+.Contact .form-container .input-section{
+
+    display: flex;
+     flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+     height: 50%;
+     padding: 15px;
+     margin: 10px;
+}
+.Contact .form-container .input-section input{
+    width: 200px;
+    height: 40px;
+    font-size: 15px;
+    padding-left: 5px;
+    border-radius: 5px;
+    margin: 10px;
+    border: 2px solid transparent;
+    background: linear-gradient(to right, #858dc9, #97e8a7);
+}
+.Contact .form-container textarea{
+    font-size: 18px;
+    padding-left: 5px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 80%;
+    border: 2px solid transparent;
+    background: linear-gradient(to right, #858dc9, #97e8a7);
+}
+.Contact button{
+    width: 200px;
+    margin: 15px 10px;
+    border-radius: 20px;
+    background: #7331c4;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    font-weight: 700;
+    transform: 0.2s linear;
+    padding: 15px;
+}
+.Contact button:hover{
+    box-shadow: 1px 1px 20px #fffcfc;
+    transform: scale(1.05);
+}
+footer{
+    height: 10vh;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+footer p{
+    font-size: 20px;
+}
+footer div{
+    font-size: 23px;
+    text-decoration: underline;
+    transition: 0.3s linear;
+}
+footer div:hover{
+     transform: scale(1.05);
+    
+     color: rgb(173, 154, 154);
+}
